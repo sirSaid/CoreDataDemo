@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jud-AF-tzp">
+                                <rect key="frame" x="0.0" y="40" width="600" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.801841256" blue="0.99699716979999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mg4-Ji-Zkx"/>
+                                    <constraint firstAttribute="width" constant="30" id="oar-Yw-8RV"/>
+                                </constraints>
+                                <state key="normal" title="插入数据"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oar-Yw-8RV"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="InsertDataBtnDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Fd-rU-P4s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anl-Vi-jTE">
+                                <rect key="frame" x="200" y="120" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2kG-Hz-vhy"/>
+                                    <constraint firstAttribute="width" constant="46" id="Vme-bU-y6F"/>
+                                </constraints>
+                                <state key="normal" title="搜索CoreData存储的所有数据"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Vme-bU-y6F"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="SearchAllDataBtnDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ddm-KX-VQP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpE-ub-Do4">
+                                <rect key="frame" x="200" y="202" width="200" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="按条件搜索"/>
+                                <connections>
+                                    <action selector="SearchAgeBtnDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEo-4f-hs8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeF-fR-cRq">
+                                <rect key="frame" x="200" y="262" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="更新数据"/>
+                                <connections>
+                                    <action selector="upDateDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdw-Gw-3zf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fni-wO-9E9">
+                                <rect key="frame" x="200" y="322" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.62269176140000004" green="0.62269176140000004" blue="0.62269176140000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删除数据"/>
+                                <connections>
+                                    <action selector="deleteBtnDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jBy-HZ-Qj9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fni-wO-9E9" firstAttribute="width" secondItem="IeF-fR-cRq" secondAttribute="width" id="0wg-jw-vAp"/>
+                            <constraint firstAttribute="trailing" secondItem="jud-AF-tzp" secondAttribute="trailing" constant="373" id="1dF-GU-abB"/>
+                            <constraint firstItem="Fni-wO-9E9" firstAttribute="top" secondItem="IeF-fR-cRq" secondAttribute="bottom" constant="30" id="47Q-rf-V08"/>
+                            <constraint firstAttribute="trailing" secondItem="anl-Vi-jTE" secondAttribute="trailing" constant="20" id="57b-0x-Aoe"/>
+                            <constraint firstItem="rpE-ub-Do4" firstAttribute="top" secondItem="anl-Vi-jTE" secondAttribute="bottom" constant="52" id="AAo-cx-hTT"/>
+                            <constraint firstItem="jud-AF-tzp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B6D-hd-7Rv"/>
+                            <constraint firstItem="IeF-fR-cRq" firstAttribute="width" secondItem="rpE-ub-Do4" secondAttribute="width" id="Fbq-zX-A9X"/>
+                            <constraint firstItem="anl-Vi-jTE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GNl-kC-iW8"/>
+                            <constraint firstItem="IeF-fR-cRq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J80-03-Cv7"/>
+                            <constraint firstItem="jud-AF-tzp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JBy-nC-9yd"/>
+                            <constraint firstItem="jud-AF-tzp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="RuL-vS-PZa"/>
+                            <constraint firstItem="anl-Vi-jTE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="aUN-3Y-mVp"/>
+                            <constraint firstItem="Fni-wO-9E9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dQo-Dj-Ns8"/>
+                            <constraint firstItem="rpE-ub-Do4" firstAttribute="width" secondItem="anl-Vi-jTE" secondAttribute="width" id="ddy-ct-8Ow"/>
+                            <constraint firstItem="IeF-fR-cRq" firstAttribute="top" secondItem="rpE-ub-Do4" secondAttribute="bottom" constant="30" id="gM1-9R-tY5"/>
+                            <constraint firstItem="rpE-ub-Do4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hD3-nM-GcX"/>
+                            <constraint firstItem="anl-Vi-jTE" firstAttribute="top" secondItem="jud-AF-tzp" secondAttribute="bottom" constant="50" id="yFi-PQ-6PW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1dF-GU-abB"/>
+                                <exclude reference="57b-0x-Aoe"/>
+                                <exclude reference="aUN-3Y-mVp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+</document>
